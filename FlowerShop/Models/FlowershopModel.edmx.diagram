@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="1d2cf56e2aee4d888b22996a4d420c68" Name="Diagram1">
+        <EntityTypeShape EntityType="myflowershopModel.Bouquet" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="myflowershopModel.FlowerBouquet" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="myflowershopModel.Flower" Width="1.5" PointX="5.75" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="myflowershopModel.FK_dbo_FlowerBouquets_dbo_Bouquets_BouquetID" ManuallyRouted="false" />
+        <AssociationConnector Association="myflowershopModel.FK_dbo_FlowerBouquets_dbo_Flowers_FlowerID" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

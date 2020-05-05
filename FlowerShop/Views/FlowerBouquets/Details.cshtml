@@ -1,0 +1,44 @@
+﻿@model FlowerShop.Models.FlowerBouquet
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>FlowerBouquet</h4>
+    <hr />
+    <dl class="dl-horizontal">
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bouquet.BouquetName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bouquet.BouquetName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Flower.FlowerName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Flower.FlowerName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Quantity)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.FlowerBouquetID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
